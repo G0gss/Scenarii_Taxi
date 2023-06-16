@@ -20,7 +20,7 @@ def log_calls(func):
         # Вызываем функцию и сохраняем результат
         result = func(*args, **kwargs)
         # Выводим результат
-        print(f"Result: {result}")
+        print(f"Результат: {result}")
         return result
     return wrapper
 
@@ -35,5 +35,5 @@ total_payment = taxi_payment(distance_km)
 print(f"Общая сумма оплаты за поездку на такси составляет ${total_payment:.2f} расстояние поездки составляет {distance_km} км")
 
 # Пример вызова декорированной функции
-distance_km = 10.2
+distance_km = 6.2
 total_payment = taxi_payment_decorated(distance_km)
