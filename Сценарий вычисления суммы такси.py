@@ -15,8 +15,8 @@ def log_calls(func):
         # Получаем текущую дату и время с помощбю комманд модуля datetime
         now = datetime.datetime.now()
         # Выводим информацию о вызове функции
-        print(f"Function {func.__name__}, текущая дата и время {now}")
-        print(f"Arguments: {args}, {kwargs}")
+        print(f"Функция {func.__name__}, текущая дата и время {now}")
+        print(f"Аргумент: {args}, {kwargs}")
         # Вызываем функцию и сохраняем результат
         result = func(*args, **kwargs)
         # Выводим результат
